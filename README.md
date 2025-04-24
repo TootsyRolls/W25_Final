@@ -1,3 +1,3 @@
 # W25 Final Project
 
-## Kolechian Foreign Intelligence System
+Deliverable 1 PDF in `doc` file
