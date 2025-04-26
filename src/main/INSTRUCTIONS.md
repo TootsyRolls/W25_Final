@@ -50,7 +50,7 @@ Submit a project idea, addressing the following points:
 * Specify the hierarchies (at least two) of the project 
 * Specify the what the interface is and why do you need it in your project
 * Specify which methods apply runtime-polymorphism
-* Specify in which class and for what purpous textIO will be used. 
+* Specify in which class and for what purpose textIO will be used. 
 * Specify in which class(es) `Comparable` will be implemented, and what class(es) need `Comparator`
 * A class diagram to show the classes and interfaces of the project and their relationship.
 * Specify which part (class, interface and methods) will be implemented for deliverable 2 (50%)
@@ -118,9 +118,9 @@ Here are a few sample ideas for your final project. Feel free to be creative and
 
 ### 9.2 Course Management System
 
-* Administrator Module: Manages administrative functions like creating student and instructor accounts, curriculum setup, employee management, etc.
+* cAdministrator Module: Manages administrative functions like creating student and instructor accounts, curriculum setup, employee management, etc.
 * Student Module: Students can log in to view coursework, submit assignments, and receive feedback.
-* Instructor Module: Instructors can log in to check assignments, communicate with students, and provide guidance.
+* Instructor Module: Instructors can log in to check assignments, communiate with students, and provide guidance.
 
 ### 9.3 Library Management System
 
