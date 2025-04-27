@@ -22,7 +22,7 @@ of the project to the teachers. The students will be asked to design, implement,
 The project MUST contain
 
 * Appropriate data structures that best fit the data.
-* At least two hierarchies of classes, each one has two layers (such as `Project.User`, `Teacher`, `Student`) is required for the project.
+* At least two hierarchies of classes, each one has two layers (such as `User`, `Teacher`, `Student`) is required for the project.
 * At least one user-defined interface with at least one abstract method in it.
 * At least one runtime-polymorphism
 * At least one textIO (reading and writing)
