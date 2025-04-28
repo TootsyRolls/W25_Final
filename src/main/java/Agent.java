@@ -1,7 +1,8 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Agent extends User {
-    private List<String> missions;
+    private List<Mission> missions;
     private int missionCompleted;
     private int missionAssigned;
 
@@ -21,11 +22,25 @@ public class Agent extends User {
 
     // add methods
 
-    public List<String> getMissions() {
+    /**
+     * This method shows list of all the missions and their statuses belonging to an agent
+     * @param missions
+     * @return A list of all missions and their statuses belonging to an agent
+     */
+    @Override
+    public List<String> viewDatabase(List<Mission> missions) {
+        List<String> agentMissionsList = new ArrayList<>();
+        for (Mission m : missions) {
+            agentMissionsList.add(m.getName() + " : " + m.getStatus());
+        }
+        return agentMissionsList;
+    }
+
+    public List<Mission> getMissions() {
         return missions;
     }
 
-    public void setMissions(List<String> missions) {
+    public void setMissions(List<Mission> missions) {
         this.missions = missions;
     }
 

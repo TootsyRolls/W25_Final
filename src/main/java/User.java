@@ -6,6 +6,8 @@ public abstract class User {
     private String password;
     private Ranks rank;
 
+    public abstract List<String> viewDatabase(List<Mission> missions);
+
     public enum Ranks {
         LIEUTENANT,
         CAPTAIN,
@@ -27,13 +29,9 @@ public abstract class User {
         this.rank = rank;
     }
 
-    public List<Mission> viewDatabase() {
-        // TODO
-    }
+    public abstract List<String> viewDatabase();
 
-    public String viewStats() {
-        // TODO
-    }
+    public abstract String viewStats();
 
     // Comparable here add later
 

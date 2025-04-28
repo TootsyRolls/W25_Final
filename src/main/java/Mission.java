@@ -29,15 +29,15 @@ public class Mission {
 
     public Mission() {
         this.id = 0;
-        this.name = "";
-        this.location = "";
+        this.name = "Operation " + "TBA";
+        this.location = "TBA";
         this.difficulty = Difficulty.EASY.getDifficultyLevel();
         this.status = status;
     }
 
     public Mission(int id, String name, String location, Difficulty difficulty, Status status) {
         this.id = id;
-        this.name = name;
+        this.name = "Operation " + name;
         this.location = location;
         this.difficulty = difficulty.getDifficultyLevel();
         this.status = status;
