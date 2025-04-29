@@ -15,6 +15,7 @@ public class Handler extends User implements Comparable<Handler> {
     }
 
     // add missions
+
     /**
      * This method adds agents to a handler
      * @param agent
@@ -50,4 +51,8 @@ public class Handler extends User implements Comparable<Handler> {
         return "";
     }
 
+    @Override
+    public int compareTo(Handler o) {
+        return 0;
+    }
 }
