@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Handler extends User{
+public class Handler extends User implements Comparable<Handler> {
     private List<Mission> allMissions;
     private List<Agent> agents; // agents assigned under handler
 
@@ -14,6 +14,7 @@ public class Handler extends User{
         this.agents = new ArrayList<>();
     }
 
+    // add missions
     /**
      * This method adds agents to a handler
      * @param agent
@@ -43,4 +44,10 @@ public class Handler extends User{
         }
         return allMissionsList;
     }
+
+    @Override
+    public String viewStats() {
+        return "";
+    }
+
 }

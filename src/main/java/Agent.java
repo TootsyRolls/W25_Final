@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Agent extends User {
     private List<Mission> missions;
@@ -35,6 +34,12 @@ public class Agent extends User {
         }
         return agentMissionsList;
     }
+
+    @Override
+    public String viewStats() {
+        return "";
+    }
+
 
     public List<Mission> getMissions() {
         return missions;

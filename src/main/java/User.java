@@ -29,7 +29,9 @@ public abstract class User {
         this.rank = rank;
     }
 
-    public abstract List<String> viewDatabase();
+    public List<String> viewDatabase() {
+        return List.of();
+    }
 
     public abstract String viewStats();
 
