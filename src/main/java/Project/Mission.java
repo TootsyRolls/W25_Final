@@ -1,7 +1,6 @@
 package Project;
 
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class Mission implements Comparator<Mission> {
     private int id;

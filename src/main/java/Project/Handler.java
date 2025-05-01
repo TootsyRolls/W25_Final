@@ -3,17 +3,17 @@ package Project;
 import java.util.*;
 
 public class Handler extends User implements Comparable<Handler> {
-    private List<Mission> allMissions;
-    private List<Agent> agents; // agents assigned under handler
+    private List<Mission> allMissions = new ArrayList<>();
+    private List<Agent> allAgents; // agents assigned under handler
 
     public Handler() {
         super();
-        this.agents = new ArrayList<>();
+        this.allAgents = new ArrayList<>();
     }
 
     public Handler(int id, String name, String password, Ranks rank) {
         super(id, name, password, rank);
-        this.agents = new ArrayList<>();
+        this.allAgents = new ArrayList<>();
     }
 
     // add missions
@@ -23,7 +23,7 @@ public class Handler extends User implements Comparable<Handler> {
      * @param agent
      */
     public void addAgent(Agent agent) {
-        agents.add(agent);
+        allAgents.add(agent);
     }
 
     /**
@@ -88,10 +88,10 @@ public class Handler extends User implements Comparable<Handler> {
         String str = new String();
 
         System.out.println("Agent Performance");
-        for (Agent agent : agents) {
-            str += "\nAgent: " + agent.getName() +
+        for (Agent agent : allAgents) {
+            str += "\nAgent: " + agent.getRank() + " " + agent.getName() +
                     "\nMissions Assigned: " + agent.getMissionAssigned() +
-                    "\nMissions Completed: " + agent.getMissionCompleted();
+                    "\nMissions Completed: " + agent.getMissionCompleted() + "\n";
         }
 
         return str;
@@ -101,5 +101,21 @@ public class Handler extends User implements Comparable<Handler> {
     public int compareTo(Handler o) {
         return 0;
         // TODO
+    }
+
+    public List<Mission> getAllMissions() {
+        return allMissions;
+    }
+
+    public void setAllMissions(List<Mission> allMissions) {
+        this.allMissions = allMissions;
+    }
+
+    public List<Agent> getAllAgents() {
+        return allAgents;
+    }
+
+    public void setAllAgents(List<Agent> allAgents) {
+        this.allAgents = allAgents;
     }
 }
